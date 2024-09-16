@@ -1,22 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <!----------------- Tailwind CSS Link ------------------>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fav-icon  -->
     <link rel="shortcut icon" href="images/model.png" type="image/x-icon">
-</head>
-<body>
-    <header>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
 
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-[#FFFBF0]">
+        <!-- -------------Nav section------------------- -->
+        <nav class="mx-3  pt-5 md:mx-16 lg:mx-32 flex flex-col md:flex-row justify-between items-center">
+            <div class="md:w-1/2">
+                <img class="h-1/2 w-1/2"  src="icons/logo.png" alt="">
+            </div>
+            <div class="md:w-2/3 ">
+                <ul class="text-[#3C3C3C] font-roboto font-medium   flex flex-col  md:flex-row justify-between items-center gap-8 md:gap-4 lg:gap-5">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="product">Product</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-------------------------- Banner section -------------------- -->
+        <div class="flex flex-col md:flex-row justify-between items-center pt-5 pb-16">
+            <div class="ml-3 md:ml-16 lg:ml-32">
+                <h1 class="text-7xl uppercase text-[#363958] font-normal font-bebas"><span class="text-[#FABE4C]">Be the
+                        Penguins</span> <br>of Winter</h1>
+                <p class="text-[#3E3E3E] my-2 font-roboto">Elegance in Every Feather – The Penguin Fashion Haven! <br>
+                    Chill Style,
+                    Warm Vibes – Fashion for Every Penguin!</p>
+                <button
+                    class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    BUY NOW</button>
+            </div>
+            <div class="mr-3 md:mr-20 lg:mr-40">
+                <img src="images/model.png" alt="banner picture">
+            </div>
+        </div>
     </header>
     <main>
+        <!-- Women Jacket section  -->
+        <section class="mt-12 max-w-7xl mx-4 md:mx-20 ">
+            <h3 class="font-normal text-[#363958] text-5xl uppercase font-bebas mb-5">Women jacket</h3>
+            <!-- ---------Jacket Container-------- -->
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Jacket 1 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-1.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Yellow Coat Jacket </h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$234</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Jacket 2 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-2.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Ladies Jacket </h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$134</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Jacket 3 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-3.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Woman Leather Jacket </h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$254</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Man Jacket section  -->
+
+        <section class="mt-24 mb-32 max-w-7xl mx-4 md:mx-20">
+            <h3 class="font-normal text-[#363958] text-5xl uppercase font-bebas mb-5">Man jacket</h3>
+            <!-- ---------Jacket Container-------- -->
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Jacket 4 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-4.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Snowboard Jacket Mens </h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$334</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Jacket 5 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-5.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Man Leather Jackets</h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$180</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+                <!-- Jacket 6 -->
+                <div class="bg-white p-5 rounded-2xl shadow-xl space-y-5">
+                    <div class="bg-[#F1F1F1] rounded-2xl p-3">
+                        <img src="images/jacket-6.png" alt="">
+                    </div>
+                    <h3 class="text-2xl text-[#363958] font-roboto font-bold">Man Casual Jackets </h3>
+                    <p class="text-[#3E3E3E] font-roboto">Our penguin-inspired jacket is designed to combine style,
+                        comfort, and warmth. Crafted from high-quality, insulating materials, it mimics the sleek and
+                        streamlined look of a penguin, perfect for staying cozy during chilly days.</p>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#FABE4C] font-roboto font-extrabold text-4xl">$330</h2>
+                        <button
+                            class="text-white font-medium bg-gradient-to-r from-[#A4BC46] to-[#85A019] px-9 py-5 rounded-xl font-roboto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 inline">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------Information Section ------------------ -->
+
+        <section class="max-w-7xl mb-10 mx-4 lg:mx-20 flex flex-col-reverse md:flex-row gap-8  lg:gap-36 justify-between items-center ">
+            <!-- info -->
+            <div class="flex flex-col gap-5 justify-between items-center">
+                <div class="h-auto w-[32rem] flex gap-8 justify-between items-center p-6 rounded-3xl shadow-xl">
+                    <img class="h-[5rem] w-[5rem]" src="icons/house.png" alt="">
+                    <div class="space-y-3">
+                        <h4 class="text-2xl text-[#363958] font-roboto font-bold">Find the Perfect Fit</h4>
+                        <p class="text-[#3E3E3E] font-roboto">Everybody is different, which is why we offer styles for
+                            every body.</p>
+                    </div>
+                </div>
+                <div class=" h-auto w-[32rem] flex gap-8 justify-between items-center p-6 rounded-3xl shadow-xl">
+                    <img class="h-[5rem] w-[5rem]" src="icons/box.png" alt="">
+                    <div class="space-y-3">
+                        <h4 class="text-2xl text-[#363958] font-roboto font-bold">Free Exchanges</h4>
+                        <p class="text-[#3E3E3E] font-roboto">One of the many reasons you can shop with peace of mind.</p>
+                    </div>
+                </div>
+                <div class=" h-auto w-[32rem] flex gap-8 justify-between items-center p-6 rounded-3xl shadow-xl">
+                    <img class="h-[5rem] w-[5rem]" src="icons/question.png" alt="">
+                    <div class="space-y-3">
+                        <h4 class="text-2xl text-[#363958] font-roboto font-bold">Contact Our Seller</h4>
+                        <p class="text-[#3E3E3E] font-roboto">They are here to help you. That's quite literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- info picture -->
+            <div>
+                <img class="object-cover" src="images/shopping.png" alt="">
+            </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
